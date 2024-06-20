@@ -1,0 +1,308 @@
+/* Reset and General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #1a1a1a;
+  color: #fff;
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+section {
+  padding: 80px 0;
+}
+
+.btn {
+  display: inline-block;
+  background-color: #ff6b6b;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #ff4d4d;
+}
+
+/* Header */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(26, 26, 26, 0.9);
+  z-index: 999;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.logo a {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+nav ul {
+  display: flex;
+}
+
+nav ul li {
+  margin-left: 30px;
+}
+
+nav ul li a {
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #ff6b6b;
+}
+
+/* Home Section */
+.home {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)), url('hero-bg.jpg') center/cover;
+  text-align: center;
+}
+
+.home .content h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.home .content h1 span {
+  color: #ff6b6b;
+}
+
+.home .content p {
+  font-size: 24px;
+  margin-bottom: 40px;
+}
+
+.home .content p span {
+  color: #ff6b6b;
+}
+
+/* About Section */
+.about h2,
+.expertise h2,
+.education h2,
+.work h2,
+.clones h2,
+.contact h2 {
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 40px;
+}
+
+.about .content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.about .content .text {
+  flex: 1;
+  margin-right: 40px;
+}
+
+.about .content .image {
+  flex: 1;
+  text-align: center;
+}
+
+.about .content .image img {
+  max-width: 100%;
+  border-radius: 5px;
+}
+
+/* Expertise Section */
+.expertise .content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.expertise .content .item {
+    margin-bottom: 40px;
+}
+
+.expertise .content .item h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.progress-bar {
+    width: 100%;
+    height: 20px;
+    background-color: #333;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.progress {
+    height: 100%;
+    background-color: #ff6b6b;
+    border-radius: 10px;
+}
+
+/* Education Section */
+.education .content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.education .content .item {
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.education .content .item h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.education .content .item p {
+  color: #ccc;
+}
+
+/* Work Section */
+.work .content {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.work .content .item {
+  flex: 1;
+  margin: 0 20px;
+  text-align: center;
+}
+
+.work .content .item img {
+  max-width: 100%;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.work .content .item h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.work .content .item p {
+  color: #ccc;
+  margin-bottom: 20px;
+}
+
+/* Clones Section */
+.clones .content {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.clones .content .item {
+  flex: 1;
+  margin: 0 20px;
+  text-align: center;
+}
+
+.clones .content .item img {
+  max-width: 100%;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.clones .content .item h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.clones .content .item p {
+  color: #ccc;
+  margin-bottom: 20px;
+}
+
+/* Contact Section */
+.contact .content {
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contact .content form {
+  flex: 1;
+  margin-right: 40px;
+}
+
+.contact .content form input,
+.contact .content form textarea {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #333;
+  color: #fff;
+  font-family: inherit;
+  resize: vertical;
+}
+
+.contact .content form input::placeholder,
+.contact .content form textarea::placeholder {
+  color: #ccc;
+}
+
+.contact .content .info {
+  flex: 1;
+}
+
+.contact .content .info .item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.contact .content .info .item i {
+  font-size: 24px;
+  margin-right: 10px;
+  color: #ff6b6b;
+}
+
+.contact .content .info .item p {
+  color: #ccc;
+}
+
+/* Footer */
+footer {
+  background-color: #
